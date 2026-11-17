@@ -19,6 +19,7 @@ library(palmerpenguins)
 ## Function and Documentation
 
 ```{r} 
+#' Title of function:
 #' Count missing values for all columns by group
 #' 
 #' @description Given a data frame `data` and a 
@@ -45,7 +46,17 @@ library(palmerpenguins)
 #' @return A data frame or tibble with the 
 #' levels of `group`, and the  number of NAs within 
 #' each level of `group` for all columns in
-#' `data` except `group`.      
+#' `data` except `group`. 
+#' 
+#' @examples
+#' 1) Counting the number of missing values present in each month only for air quality values
+#' 
+#' 2) Alternative example of grouping the missing values for air quality by month by using a pipe operator 
+#' 
+#' 3) Using grouping to maintain the month grouping in the output for air quality measures
+#' 
+#' 
+#' @export      
 count_all_missing_by_group <- function(data, group_col, .groups = "drop") { 
   
   if(!is.null(.groups)) { 
@@ -82,6 +93,7 @@ The optional `.groups` argument allows us to keep the output grouped by the grou
 ```{r} 
 count_all_missing_by_group(airquality, Month, .groups = "keep")
 ```
+
 
 
 ## Tests 
