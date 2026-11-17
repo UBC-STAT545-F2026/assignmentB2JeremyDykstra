@@ -11,11 +11,8 @@ knitr::opts_chunk$set(echo = TRUE)
 # Description of the package
 
 This package is useful for counting missing values for various groups. 
-Here are some features that this package can conduct.
+There are two main features of this package, both focused on producing a tibble output table with missing values. The first feature is to create an ungrouped missing values table for different columns. The second feature is to also display missing values, grouped by a specified variable in the output table.
 
-1. Ungrouped missing values for different columns
-
-2. Displaying missing values, grouped by a specified variable in the output table.
 
 # Installation instructions
 
@@ -23,7 +20,6 @@ This package is available for free public download (with citation) from GitHub. 
 Use the following code to directly install the package by pasting this message directly into the R console. If successfully installed you are likely to get a message like this at the end of the loading code in your R console "DONE (assignmentB2JeremyDykstra)". 
 
 ```{r, message = FALSE}
-#install.packages("devtools")
 devtools::install_github("UBC-STAT545-F2026/assignmentB2JeremyDykstra") 
 ```
 
