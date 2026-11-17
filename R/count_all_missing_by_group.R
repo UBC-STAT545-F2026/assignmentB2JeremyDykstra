@@ -30,12 +30,14 @@
 #' `data` except `group`.
 #'
 #' @examples
-#' 1) Counting the number of missing values present in each month only for air quality values
+#' # 1- Counting the number of missing values present in each month only for air quality values
+#' count_all_missing_by_group(airquality, Month)
 #'
-#' 2) Alternative example of grouping the missing values for air quality by month by using a pipe operator
+#' # 2- Alternative example of grouping the missing values for air quality by month by using a pipe operator
+#' airquality |> count_all_missing_by_group(Month)
 #'
-#' 3) Using grouping to maintain the month grouping in the output for air quality measures
-#'
+#' # 3- Using grouping to maintain the month grouping in the output for air quality measures
+#' count_all_missing_by_group(airquality, Month, .groups = "keep")
 #'
 #' @export
 count_all_missing_by_group <- function(data, group_col, .groups = "drop") {
@@ -49,7 +51,7 @@ count_all_missing_by_group <- function(data, group_col, .groups = "drop") {
     }
   }
 
-  data |> group_by({{ group_col }}) |>
-    summarize(across(everything(), ~sum(is.na(.x))),
+  data |> dplyr::group_by({{ group_col }}) |>
+    dplyr::summarize(dplyr::across(everything(), ~sum(is.na(.x))),
               .groups = .groups)
 }
