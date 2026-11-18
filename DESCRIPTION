@@ -1,6 +1,6 @@
 Package: assignmentB2JeremyDykstra
 Title: Counting Missing Values for Columns by Group
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
     person("Jeremy", "Dykstra", , "jdykst01@student.ubc.ca", role = c("aut", "cre"))
 Description: This package is useful for counting missing values for various groups. 
@@ -14,5 +14,6 @@ RoxygenNote: 7.3.3
 Imports: 
   dplyr
 Suggests: 
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    tibble
 Config/testthat/edition: 3
