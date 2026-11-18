@@ -5,12 +5,11 @@ README
 # Description of the package
 
 This package is useful for counting missing values for various groups.
-Here are some features that this package can conduct.
-
-1.  Ungrouped missing values for different columns
-
-2.  Displaying missing values, grouped by a specified variable in the
-    output table.
+There are two main features of this package, both focused on producing a
+tibble output table with missing values. The first feature is to create
+an ungrouped missing values table for different columns. The second
+feature is to also display missing values, grouped by a specified
+variable in the output table.
 
 # Installation instructions
 
@@ -22,31 +21,16 @@ installed you are likely to get a message like this at the end of the
 loading code in your R console “DONE (assignmentB2JeremyDykstra)”.
 
 ``` r
-#install.packages("devtools")
-#devtools::install_github("UBC-STAT545-F2026/assignmentB2JeremyDykstra") 
+remotes::install_github(
+  "UBC-STAT545-F2026/assignmentB2JeremyDykstra",
+  ref = "0.1.0"
+)
 ```
 
 # How to use this package, with examples
 
 After installing the package from GitHub, load the package into your R
 studio using the below code.
-
-``` r
-library(dplyr) 
-```
-
-    ## Warning: package 'dplyr' was built under R version 4.4.3
-
-    ## 
-    ## Attaching package: 'dplyr'
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
 
 ``` r
 library(assignmentB2JeremyDykstra)
