@@ -20,7 +20,10 @@ This package is available for free public download (with citation) from GitHub. 
 Use the following code to directly install the package by pasting this message directly into the R console. If successfully installed you are likely to get a message like this at the end of the loading code in your R console "DONE (assignmentB2JeremyDykstra)". 
 
 ```{r, message = FALSE}
-devtools::install_github("UBC-STAT545-F2026/assignmentB2JeremyDykstra") 
+remotes::install_github(
+  "UBC-STAT545-F2026/assignmentB2JeremyDykstra",
+  ref = "0.1.0"
+)
 ```
 
 # How to use this package, with examples

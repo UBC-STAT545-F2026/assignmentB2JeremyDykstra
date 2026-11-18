@@ -1,7 +1,7 @@
 #count_all_missing_by_group.R
 
 #' Title of function:
-#' Count missing values for all columns by group
+#' Counting Missing Values for Columns by Group
 #'
 #' @description Given a data frame `data` and a
 #' column `group`, `count_all_missing_by_group()` creates
@@ -9,7 +9,9 @@
 #' The first column of the output data frame
 #' contains the levels of `group`, and the rest of
 #' the columns contain the number of missing values for
-#' all columns in `data` except `group`.
+#' all columns in `data` except `group`. Further information
+#' on this package can be found by running the following commands in the console
+#' devtools::load_all(), then ?count_all_missing_by_group in the console.
 #'
 #' @details This function is
 #' a wrapper around the `group_by()` and
